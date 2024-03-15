@@ -1,0 +1,31 @@
+{
+  "theme": "Vesper",
+  "ui_font_size": 14,
+  "ui_font_family": "FiraCode Nerd Font Mono",
+  "buffer_font_size": 12,
+  "tab_size": 2,
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "git_status": true,
+  "terminal": {
+    "font_family": "FiraCode Nerd Font Mono",
+    "blinking": "off"
+  },
+  "languages": {
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    }
+  }
+}
