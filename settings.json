@@ -9,25 +9,34 @@
   "tab_size": 2,
   "autosave": "on_focus_change",
   "format_on_save": "on",
+  "soft_wrap": "editor_width",
   "git_status": true,
+  "enable_language_server": true,
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": false
+  },
+  "project_panel": {
+    "dock": "right"
+  },
   "terminal": {
     "font_family": "FiraCode Nerd Font Mono",
-    "blinking": "off"
+    "blinking": "off",
+    "env": {
+      "EDITOR": "zed --wait"
+    }
   },
+
   "languages": {
     "TypeScript": {
       "code_actions_on_format": {
         "source.organizeImports": true
       }
     },
-    "JavaScript": {
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
-    },
     "TSX": {
       "code_actions_on_format": {
-        "source.organizeImports": true
+        "source.organizeImports": true,
+        "use_autoclose": true
       }
     }
   }
