@@ -1,7 +1,8 @@
 {
   "features": {
-    "inline_completion_provider": "supermaven"
+    "inline_completion_provider": "copilot"
   },
+  "show_inline_completions": true,
   "theme": "Ayu Dark",
   "ui_font_size": 14,
   "ui_font_family": "FiraCode Nerd Font Mono",
@@ -16,9 +17,7 @@
     "diagnostics": true,
     "metrics": false
   },
-  "project_panel": {
-    "dock": "right"
-  },
+
   "terminal": {
     "font_family": "FiraCode Nerd Font Mono",
     "blinking": "off",
@@ -36,7 +35,8 @@
     "TSX": {
       "code_actions_on_format": {
         "source.organizeImports": true,
-        "use_autoclose": true
+        "use_autoclose": true,
+        "use_autoclose_tags": true
       }
     }
   }
