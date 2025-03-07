@@ -1,9 +1,19 @@
 {
-  "features": {
-    "inline_completion_provider": "copilot"
+  "project_panel": {
+    "dock": "left"
   },
-  "show_inline_completions": true,
-  "theme": "Ayu Dark",
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "show_edit_predictions": true,
+  "theme": "Vesper",
   "ui_font_size": 14,
   "ui_font_family": "FiraCode Nerd Font Mono",
   "buffer_font_size": 12,
@@ -13,11 +23,11 @@
   "soft_wrap": "editor_width",
   "git_status": true,
   "enable_language_server": true,
+  "ensure_final_newline_on_save": false,
   "telemetry": {
     "diagnostics": true,
     "metrics": false
   },
-
   "terminal": {
     "font_family": "FiraCode Nerd Font Mono",
     "blinking": "off",
@@ -25,19 +35,26 @@
       "EDITOR": "zed --wait"
     }
   },
-
   "languages": {
+    "JSONC": {
+      "show_edit_predictions": true
+    },
     "TypeScript": {
+      "ensure_final_newline_on_save": true,
       "code_actions_on_format": {
         "source.organizeImports": true
       }
     },
     "TSX": {
+      "ensure_final_newline_on_save": true,
       "code_actions_on_format": {
         "source.organizeImports": true,
         "use_autoclose": true,
         "use_autoclose_tags": true
       }
+    },
+    "Python": {
+      "language_servers": ["pyright", "python-refactoring"]
     }
   }
 }
